@@ -1,0 +1,23 @@
+{
+	"name": "DestinationDataset_9vi",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Orc",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "contactData",
+				"folderPath": "indy",
+				"container": "outputfolder"
+			},
+			"orcCompressionCodec": "none",
+			"enablePhysicalSchema": true
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

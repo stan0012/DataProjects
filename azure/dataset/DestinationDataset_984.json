@@ -1,0 +1,22 @@
+{
+	"name": "DestinationDataset_984",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Orc",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "indy",
+				"container": "outputfolder"
+			},
+			"orcCompressionCodec": "none",
+			"enablePhysicalSchema": true
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

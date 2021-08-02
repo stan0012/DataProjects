@@ -1,0 +1,37 @@
+{
+	"name": "Trigger_984",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyIndyLocalDataToAzure",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"windowStart": "@{adddays(trigger().scheduledTime, -7)}",
+					"windowEnd": "@trigger().scheduledTime"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 7,
+				"startTime": "2021-08-02T19:54:00Z",
+				"endTime": "2021-08-03T19:54:00Z",
+				"timeZone": "UTC",
+				"schedule": {
+					"minutes": [
+						50
+					],
+					"hours": [
+						19
+					]
+				}
+			}
+		}
+	}
+}

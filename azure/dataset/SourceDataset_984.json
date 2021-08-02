@@ -1,0 +1,41 @@
+{
+	"name": "SourceDataset_984",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "First",
+				"type": "nchar"
+			},
+			{
+				"name": "Last",
+				"type": "nchar"
+			},
+			{
+				"name": "DOB",
+				"type": "date"
+			},
+			{
+				"name": "LastModified",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Contact"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,37 @@
+{
+	"name": "Trigger_9vi",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyPipeline_9vi_indy",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"windowStart": "@{adddays(trigger().scheduledTime, -7)}",
+					"windowEnd": "@trigger().scheduledTime"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 7,
+				"startTime": "2021-08-02T21:01:00Z",
+				"endTime": "2021-08-31T21:01:00Z",
+				"timeZone": "UTC",
+				"schedule": {
+					"minutes": [
+						7
+					],
+					"hours": [
+						19
+					]
+				}
+			}
+		}
+	}
+}

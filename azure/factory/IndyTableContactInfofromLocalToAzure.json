@@ -1,0 +1,9 @@
+{
+	"name": "IndyTableContactInfofromLocalToAzure",
+	"location": "westus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "43da8e98-9417-4ff6-82ff-d6efb640931e",
+		"tenantId": "46c98d88-e344-4ed4-8496-4ed7712e255d"
+	}
+}
